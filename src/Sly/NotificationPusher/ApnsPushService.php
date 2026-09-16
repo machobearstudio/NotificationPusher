@@ -47,7 +47,7 @@ class ApnsPushService extends AbstractPushService
      * @param string $certificatePath
      * @param string|null $passPhrase
      */
-    public function __construct(string $certificatePath, string $passPhrase = null, string $environment = PushManager::ENVIRONMENT_DEV)
+    public function __construct(string $certificatePath, ?string $passPhrase = null, string $environment = PushManager::ENVIRONMENT_DEV)
     {
         parent::__construct($environment);
 

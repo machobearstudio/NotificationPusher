@@ -126,7 +126,7 @@ class Apns extends BaseAdapter implements FeedbackAdapterInterface
      *
      * @return ServiceAbstractClient|ServiceClient|null
      */
-    public function getOpenedClient(ServiceAbstractClient $client = null): ServiceAbstractClient|ServiceClient|null
+    public function getOpenedClient(?ServiceAbstractClient $client = null): ServiceAbstractClient|ServiceClient|null
     {
         if (!$client) {
             $client = new ServiceClient();
