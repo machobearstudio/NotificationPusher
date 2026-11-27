@@ -41,11 +41,9 @@
         "symfony/options-resolver": ">=2.3,<7",
         "symfony/console": ">=2.3,<7",
         "symfony/process": ">=2.3,<7",
-        "laminas/laminas-http": "2.x",
         "machobearstudio/zendservice-apple-apns": "dev-master",
-        "machobearstudio/zendservice-google-gcm": "dev-master",
         "doctrine/inflector": "~1.1",
-        "symfony/filesystem": ">=2.3,<7",
+        "symfony/filesystem": ">=2.3,<8",
         "symfony/error-handler": "*"
     },
     "require-dev": {
@@ -53,6 +51,10 @@
         "atoum/stubs": "2.*",
         "atoum/visibility-extension": "2.*",
         "symfony/var-dumper": ">=2.3,<7"
+    },
+    "suggest": {
+        "laminas/laminas-http": "Required by the Gcm adapter (2.x)",
+        "machobearstudio/zendservice-google-gcm": "Required by the Gcm adapter (dev-master)"
     },
     "config": {
         "bin-dir": "bin"
